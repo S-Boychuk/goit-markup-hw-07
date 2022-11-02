@@ -1,25 +1,25 @@
 .team {
     background: var(--secondary-light-color);
     
-    &-list {
+    &__list {
         display: flex;
         gap: 30px;
     }
 
-    &-item {
+    &__item {
         background: var(--primary-light-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         flex-basis: calc((100% - 90px) / 4);
-    }
 
         &>div {
             padding-top: 30px;
             padding-bottom: 30px;
         }
+    }
 
-    &-subtitle {
+    &__subtitle {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -30,7 +30,7 @@
         margin-bottom: 10px;
     }
 
-    &-text {
+    &__text {
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -38,18 +38,18 @@
         margin-bottom: 16px;
     }
 
-    &-soc-list {
+    &__soc-list {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
 
-    &-soc-item {
+    &__soc-item {
         width: 44px;
         height: 44px;
     }
 
-    &-soc-link {
+    &__soc-link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,14 +59,14 @@
 
         background-color: var(--primary-light-color);
         fill: var(--icon-color);
-
-        transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-            :hover,
-            :focus {
+        
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
                 background-color: var(--accent-color);
                 fill: var(--primary-light-color);
             }
+        }
     }
-}

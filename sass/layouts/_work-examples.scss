@@ -1,17 +1,17 @@
 .work-examples {
     padding-top: 0;
 
-    &-list {
+    &__list {
         display: flex;
         gap: 30px;
     }
 
-    &-item {
+    &__item {
         position: relative;
         flex-basis: calc((100% - 60px) / 3);
     }
 
-    &-label {
+    &__label {
         position: absolute;
         height: 24%;
         width: 100%;

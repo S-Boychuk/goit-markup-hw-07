@@ -1,9 +1,9 @@
-.features-list {
+.features__list {
     display: flex;
     gap: 30px;
 }
 
-.features-item {
+.features__item {
     flex-basis: calc((100% - 90px) / 4);
     &::before {
         display: block;
@@ -17,12 +17,12 @@
 }
 
 @each $iconName in antenna, clock, diagram, astronaut {
-    .#{$iconName}-icon::before {
+    .#{$iconName}__icon::before {
         background-image: url("../img/decorative-img/#{$iconName}.svg");
     }
 }
 
-.features-subtitle {
+.features__subtitle {
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -32,7 +32,7 @@
     margin-bottom: 10px;
 }
 
-.features-text {
+.features__text {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
